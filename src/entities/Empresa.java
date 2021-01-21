@@ -1,0 +1,61 @@
+package entities;
+
+import java.util.List;
+
+public class Empresa {
+
+	private Integer idEmpresa;
+	private String razaoSocial;
+	private String cnpj;
+	private List<Funcionario> funcionarios;
+	
+	public Empresa() {
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	public Empresa(Integer idEmpresa, String razaoSocial, String cnpj, List<Funcionario> funcionarios) {
+		super();
+		this.idEmpresa = idEmpresa;
+		this.razaoSocial = razaoSocial;
+		this.cnpj = cnpj;
+		this.funcionarios = funcionarios;
+	}
+
+
+
+	public Integer getIdEmpresa() {
+		return idEmpresa;
+	}
+
+	public void setIdEmpresa(Integer idEmpresa) {
+		this.idEmpresa = idEmpresa;
+	}
+
+	public String getRazaoSocial() {
+		return razaoSocial;
+	}
+
+	public void setRazaoSocial(String razaoSocial) {
+		this.razaoSocial = razaoSocial;
+	}
+
+	public String getCnpj() {
+		return cnpj;
+	}
+
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
+	}
+
+	public List<Funcionario> getFuncionarios() {
+		return funcionarios;
+	}
+
+	public void setFuncionarios(List<Funcionario> funcionarios) {
+		this.funcionarios = funcionarios;
+	}
+
+	
+	
+}
